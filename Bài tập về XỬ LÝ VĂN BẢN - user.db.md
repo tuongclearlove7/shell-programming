@@ -44,6 +44,7 @@ cmd: cat user.txt | grep "@dtu.edu.vn" | wc -l
 cmd: cat user.txt | awk -F: '$1=="u2" {split($3, a, "/"); print a[3]}'
 
 
+
 ```
 
 

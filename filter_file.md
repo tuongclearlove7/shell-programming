@@ -42,8 +42,25 @@ Lệnh cho biết số phiên làm việc của mỗi user trên hệ thống?
 
 cmd : who | cut -d' ' -f1 | sort | uniq -c
 
+Lenh cho biet home dir of user 
+cmd : cat /etc/passwd | grep ^tuong: | cut -d':' -f6
 
+lenh cho biet danh sach cacs user cung nhom co GID=501?
+cmd: cat /etc/passwd | cut -d':' -f1,4 | grep -w 501
 
+lenh quan sat GID cua CS226
+cmd: cat /etc/group | grep "^CS226:"
+
+//Tạo vài user & cho vào nhóm CS226
+cmd: useradd sv1 -g CS226
+cmd: useradd sv2 -g CS226
+cmd: useradd sv3 -g CS226
+
+lenh loc id cua group
+cmd: cat /etc/group | grep "^CS226:"
+
+lenh loc id cua cua user trong group
+cmd: cat /etc/passwd | cut -d':' -f1,4 | grep -w 1001
 
 
 
