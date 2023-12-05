@@ -63,7 +63,9 @@ lenh loc id cua cua user trong group
 cmd: cat /etc/passwd | cut -d':' -f1,4 | grep -w 1001
 
 
+cat user.txt | grep "^u2
 
+cat user.txt | awk -F: '$1=="u3" {print $3}'
 
 
 

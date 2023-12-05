@@ -1,4 +1,8 @@
-cat user.txt | grep "^u2
+x=10
+a=20
+expr $(($x+$k))
+expr $(($x-$k))
+expr $(($x*$k))
+expr $(($x/$k))
 
 
-cat user.txt | awk -F: '$1=="u3" {print $3}'
